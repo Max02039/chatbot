@@ -19,6 +19,7 @@ def get_all_ses():
 
 def create_table():
     sql = '''
+    DROP TABLE users;
     CREATE TABLE users (
         id int,
         idtwo int,
@@ -52,5 +53,6 @@ def del_session(us_id):
         return result[1]
     else:
         return result[0]
+
 def take_info():
     pass
